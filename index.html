@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Cases in Kansas</title>
+    <!-- import your final project's stylesheet and Google Fonts -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link to DataTable -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.css"/>
+    
+    <!-- import your final project's javascript files -->
+    <script src="https://kit.fontawesome.com/740e6c08cb.js" crossorigin="anonymous"></script>
+    <!-- please just use this line for this project only as it contains my own Font Awesome key -->
+
+    <!-- import external scripts from other JS libraries -->
+    <!-- Highcharts
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <!-- DataTable-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="main.js"></script>
+   
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+   
+</head>
+
+<body>
+   
+    <div id="graphic-3">
+        <table  id="dt-table" width="100%" class="display table table-bordered table-hover table-condensed">
+            <thead><tr><th title="Field #1">County</th>
+            <th title="Field #2">Cases (x10000)</th>
+            <th title="Field #3">City</th>
+            </tr></thead>
+            <tbody><tr>
+            <td>Baker</td>
+            <td align="right">940000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Benedictine</td>
+            <td align="right">1300000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Bethel</td>
+            <td align="right">1400000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Butler</td>
+            <td align="right">2120000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Central Christian</td>
+            <td align="right">200000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Dodge City</td>
+            <td align="right">130000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Emporia</td>
+            <td align="right">188000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Flint Hills</td>
+            <td align="right">40000</td>
+            <td align="right">5020</td>
+            </tr>
+            <tr>
+            <td>Fort Hays</td>
+            <td align="right">3070000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Haskell</td>
+            <td align="right">0</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Hesston</td>
+            <td align="right">70000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Hutchinson</td>
+            <td align="right">510000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Johnson County</td>
+            <td align="right">1360000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Kansas State</td>
+            <td align="right">11830000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Kansas Wesleyan</td>
+            <td align="right">280000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Labette</td>
+            <td align="right">50000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Newman</td>
+            <td align="right">840000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Pittsburg</td>
+            <td align="right">2860000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Southwestern</td>
+            <td align="right">860000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Sterling</td>
+            <td align="right">220000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>University of Kansas</td>
+            <td align="right">12490000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Saint Mary</td>
+            <td align="right">340000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Washburn</td>
+            <td align="right">2150000</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>Wichita St</td>
+            <td align="right">1490000</td>
+            <td align="right">0</td>
+            </tr>
+           
+            </tbody></table>
+    </div>
+
+    <script src="table.js"></script>
+</body>
+
+</html>
